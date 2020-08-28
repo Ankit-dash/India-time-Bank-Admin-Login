@@ -58,31 +58,6 @@
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
-
-<style>
-
-  @media screen and (max-width: 986px) {
-
-   .requestOptions{
-    display: none;
-   }
-
- .data-table-area .container{
-   margin-left: 0;
-   margin-right: 0;
-   width: 100vw;
- }
-
-  }
-
-
-
-
-</style>
-
-
-
 </head>
 
 <body>
@@ -369,7 +344,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- End Header Top Area -->
     <!-- Mobile Menu start -->
     <div class="mobile-menu-area">
@@ -380,7 +355,7 @@
                         <nav id="dropdown">
                             <ul class="mobile-menu-nav">
                                 <li><a data-toggle="collapse" data-target="#Charts" href="#">Home</a>
-                                    <ul class="collapse dropdown-header-top">
+                                    <ul class="collapse dropdown-header-top">    
                                         <li><a href="index.html">Dashboard</a></li>
                                         <li><a href="analytics.html">Analytics</a></li>
                                         <li><a href="widgets.html">Widgets</a></li>
@@ -394,12 +369,12 @@
                                     </ul>
                                 </li>
                                 <li><a data-toggle="collapse" data-target="#demolibra" href="#">Interface</a>
-                                    <ul id="demolibra" class="collapse dropdown-header-top">
+                                    <ul id="demolibra" class="collapse dropdown-header-top">                                        
                                         <li><a href="google-map.html">Google Map</a></li>
-                                        <li><a href="data-map.html">Data Maps</a></li>
+                                        <li><a href="data-map.html">Data Maps</a></li>                                        
                                         <li><a href="image-cropper.html">Images Cropper</a></li>
                                     </ul>
-                                </li>
+                                </li>                               
                                 <li><a data-toggle="collapse" data-target="#demo" href="#">Requests</a>
                                     <ul id="demo" class="collapse dropdown-header-top">
                                         <li><a href="approvalreq.html">Approval Requests</a>
@@ -455,7 +430,7 @@
                         <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i> Email</a>
                         </li>
                         <li><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> Interface</a>
-                        </li>
+                        </li>                                                
                         <li  class="active"><a data-toggle="tab" href="#Forms"><i class="notika-icon notika-form"></i> Requests</a>
                         </li>
                         <li><a data-toggle="tab" href="#Appviews"><i class="notika-icon notika-app"></i>Users</a>
@@ -465,9 +440,9 @@
                     </ul>
                     <div class="tab-content custom-menu-content">
                         <div id="Home" class="tab-pane notika-tab-menu-bg animated flipInX">
-                            <ul class="notika-main-menu-dropdown">
+                            <ul class="notika-main-menu-dropdown">                
                                 <li><a href="index.html">Dashboard</a>
-                                </li>
+                                </li>                                
                                 <li><a href="analytics.html">Analytics</a>
                                 </li>
                                 <li><a href="widgets.html">Widgets</a>
@@ -485,15 +460,15 @@
                             </ul>
                         </div>
                         <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX">
-                            <ul class="notika-main-menu-dropdown">
+                            <ul class="notika-main-menu-dropdown">                                
                                 <li><a href="google-map.html">Google Map</a>
                                 </li>
                                 <li><a href="data-map.html">Data Maps</a>
-                                </li>
+                                </li>                            
                                 <li><a href="image-cropper.html">Images Cropper</a>
-                                </li>
+                                </li>                            
                             </ul>
-                        </div>
+                        </div>                                        
                         <div id="Forms" class="tab-pane in active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="approvalreq.html">Approval Requests</a>
@@ -535,316 +510,215 @@
             </div>
         </div>
     </div>
-    <!-- Main Menu area End-->
-	<!-- Breadcomb area Start-->
-
-	<!-- Breadcomb area End-->
-    <!-- Data Table area Start-->
-
-    <section>
-      <div class="container-fluid" style="display:flex;">
-
-       <div class="requestOptions" style="width:350px;background:yellow;height:500px;">
-         <h3 class="text-center" style="margin:50px;">Approval Requests</h3>
-    <br>
-         <button type="button" class="btn btn-info btn-lg btn-block " style="width:284px;margin:0 20px;">Organisation Requests</button>
-         <button type="button" class="btn btn-info btn-lg btn-block " style="width:284px;margin:20px;">Loan Approval Requests</button>
-         <button type="button" class="btn btn-info btn-lg btn-block " style="width:284px;margin:0 20px;">Other Requests</button>
-       </div>
-
-       <div class="requestForms" style="width:800px;">
-         <button type="button" class="btn btn-success btn-lg" style="margin:30px;">Approve All Selected User</button>
-         <button type="button" class="btn btn-success btn-lg" style="margin-left:30px;">Reject All Selected User</button>
-
-         <div class="data-table-area">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                         <div class="data-table-list">
-                             <div class="basic-tb-hd">
-                                 <h2>User Registeration</h2>
-
-                             </div>
-                             <div class="table-responsive">
-                                 <table id="data-table-basic" class="table table-striped">
-                                     <thead class="thead-light">
-                                         <tr>
-                                             <th> <input type="checkbox"> Select </th>
-                                             <th>Type</th>
-                                             <th>Name</th>
-                                             <th>Email</th>
-                                             <th>Other Info</th>
-                                         </tr>
-                                     </thead>
-                                     <tbody>
-                                         <tr id="first">
-                                             <td><input type="checkbox"></td>
-                                             <td>Loan</td>
-                                             <td>Garrett Winters</td>
-                                             <td>Edinburgh@gmail.com</td>
-                                             <td>61</td>
-
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-                                         <tr>
-                                           <td><input type="checkbox"></td>
-                                           <td>Loan</td>
-                                           <td>Garrett Winters</td>
-                                           <td>Edinburgh@gmail.com</td>
-                                           <td>61</td>
-
-                                         </tr>
-
-                                     </tfoot>
-                                 </table>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-       </div>
-      </div>
-    </section>
-
-
-    <div id="firstModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg" role="content">
-                <div class="modal-content" style="width:800px;left:0;top:0;">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Application Info</h4>
-                        <button type="button" class="close" data-dismiss="modal">
-                            &times;
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" href="#dashover" role="tab" data-toggle="tab"><strong>Details</strong></a>
-                          </li>
-                        </ul>
-                        <div class="tab-content">
-                          <div role="tabpanel" class="tab-pane fade  show active green" id="dashover">
-                              <table class="table table-striped">
-                                  <tbody>
-                                <tr>
-                                    <th>NAME</th>
-                                    <td>Garrett Winters</td>
-
-                                </tr>
-                                <tr>
-                                    <th>PROFILE</th>
-                                    <td>Web Developer</td>
-
-                                </tr>
-                                <tr>
-                                    <th>Type</th>
-                                    <td>Loan</td>
-
-                                </tr>
-                              </table>
-                              <br>
-                              <table class="table table-stripped">
-                                <tr>
-                                    <th>LOAN AMOUNT</th>
-                                    <td>1000</td>
-
-                                </tr>
-                                 <tr>
-                                    <th>URGENCY</th>
-                                    <td>---</td>
-
-                                </tr>
-                                <tr>
-                                    <th>OTHET DETAILS</th>
-                                    <td>10</td>
-
-                                </tr>
-                                <tr>
-                                    <th>CONTACT</th>
-                                    <td>abc@gmail.com</td>
-
-                                </tr>
-                        </tbody>
-                              </table>
-                          </div>
-                      </div>
-                      <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false"> Accept </button>
-                      <button type="button" class="btn btn-secondary float-right" data-toggle="button" aria-pressed="false"> Ignore </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-  <!-- Data Table area End-->
-    <!-- Start Footer area-->
-    <div class="footer-copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="footer-copy-right">
-                        <p>Copyright © 2018
-. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+<!--content-->
+<!--Bread crumb-->
+<div class="breadcomb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="breadcomb-list">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="breadcomb-wp">
+                                <div class="breadcomb-icon">
+                                    <i class="notika-icon notika-windows"></i>
+                                </div>
+                                <div class="breadcomb-ctn">
+                                    <h2>Contact Requests</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+                            <div class="breadcomb-report">
+                                <button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Footer area-->
+</div>
+<!-- Breadcomb area End-->
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Subject</th>
+                                        <th>Date</th>
+                                        <th>Location</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="first">
+                                      <td>Ankit</td>
+                                      <td>Web Developer</td>
+                                      <td>28/05/2020</td>
+                                      <td>Mumbai</td>
+                                      <td>
+                                        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" style="margin-right:15px;"> Accept </button>
+                                        <button type="button" class="btn btn-secondary float-right" data-toggle="button" aria-pressed="false"> Ignore </button>
+                                      </td>
+                                    </tr>
+                                    <tr id="first">
+                                        <td>Ankit</td>
+                                        <td>Web Developer</td>
+                                        <td>28/05/2020</td>
+                                        <td>Mumbai</td>
+                                      <td>
+                                        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" style="margin-right:15px;"> Accept </button>
+                                        <button type="button" class="btn btn-secondary float-right" data-toggle="button" aria-pressed="false"> Ignore </button>
+                                      </td>
+                                    </tr>
+                                    <tr id="first">
+                                        <td>Ankit</td>
+                                        <td>Web Developer</td>
+                                        <td>28/05/2020</td>
+                                        <td>Mumbai</td>
+                                      <td>
+                                        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" style="margin-right:15px;"> Accept </button>
+                                        <button type="button" class="btn btn-secondary float-right" data-toggle="button" aria-pressed="false"> Ignore </button>
+                                      </td>
+                                    </tr>
+                                    <tr id="first">
+                                        <td>Ankit</td>
+                                        <td>Web Developer</td>
+                                        <td>28/05/2020</td>
+                                        <td>Mumbai</td>
+                                      <td>
+                                        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" style="margin-right:15px;"> Accept </button>
+                                        <button type="button" class="btn btn-secondary float-right" data-toggle="button" aria-pressed="false"> Ignore </button>
+                                      </td>
+                                    </tr>
+                                    <tr id="first">
+                                        <td>Ankit</td>
+                                        <td>Web Developer</td>
+                                        <td>28/05/2020</td>
+                                        <td>Mumbai</td>
+                                      <td>
+                                        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" style="margin-right:15px;"> Accept </button>
+                                        <button type="button" class="btn btn-secondary float-right" data-toggle="button" aria-pressed="false"> Ignore </button>
+                                      </td>
+                                    </tr>
+                                    <tr id="first">
+                                        <td>Ankit</td>
+                                        <td>Web Developer</td>
+                                        <td>28/05/2020</td>
+                                        <td>Mumbai</td>
+                                      <td>
+                                        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" style="margin-right:15px;"> Accept </button>
+                                        <button type="button" class="btn btn-secondary float-right" data-toggle="button" aria-pressed="false"> Ignore </button>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Start Footer area-->
+<div class="footer-copyright-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-copy-right">
+                    <p>Copyright © 2020
+. All rights reserved. Template by <a href="https://colorlib.com">Time Bank of India</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Footer area-->
     <!-- jquery
 		============================================ -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- bootstrap JS
-		============================================ -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- wow JS
-		============================================ -->
-    <script src="js/wow.min.js"></script>
-    <!-- price-slider JS
-		============================================ -->
-    <script src="js/jquery-price-slider.js"></script>
-    <!-- owl.carousel JS
-		============================================ -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- scrollUp JS
-		============================================ -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="js/meanmenu/jquery.meanmenu.js"></script>
-    <!-- counterup JS
-		============================================ -->
-    <script src="js/counterup/jquery.counterup.min.js"></script>
-    <script src="js/counterup/waypoints.min.js"></script>
-    <script src="js/counterup/counterup-active.js"></script>
-    <!-- mCustomScrollbar JS
-		============================================ -->
-    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <!-- sparkline JS
-		============================================ -->
-    <script src="js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="js/sparkline/sparkline-active.js"></script>
-    <!-- flot JS
-		============================================ -->
-    <script src="js/flot/jquery.flot.js"></script>
-    <script src="js/flot/jquery.flot.resize.js"></script>
-    <script src="js/flot/flot-active.js"></script>
-    <!-- knob JS
-		============================================ -->
-    <script src="js/knob/jquery.knob.js"></script>
-    <script src="js/knob/jquery.appear.js"></script>
-    <script src="js/knob/knob-active.js"></script>
-    <!--  Chat JS
-		============================================ -->
-    <script src="js/chat/jquery.chat.js"></script>
-    <!--  todo JS
-		============================================ -->
-    <script src="js/todo/jquery.todo.js"></script>
-	<!--  wave JS
-		============================================ -->
-    <script src="js/wave/waves.min.js"></script>
-    <script src="js/wave/wave-active.js"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="js/plugins.js"></script>
-    <!-- Data Table JS
-		============================================ -->
-    <script src="js/data-table/jquery.dataTables.min.js"></script>
-    <script src="js/data-table/data-table-act.js"></script>
-    <!-- main JS
-		============================================ -->
-    <script src="js/main.js"></script>
-	<!-- tawk chat JS
-		============================================ -->
-    <script src="js/tawk-chat.js"></script>
-
-    <script>
-      $(document).ready(function(){
-         $('#first').click(function(){
-          $('#firstModal').modal('show');
-      });
-      });
-    </script>
-</body>
-
-</html>
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <!-- bootstrap JS
+            ============================================ -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow JS
+            ============================================ -->
+        <script src="js/wow.min.js"></script>
+        <!-- price-slider JS
+            ============================================ -->
+        <script src="js/jquery-price-slider.js"></script>
+        <!-- owl.carousel JS
+            ============================================ -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- scrollUp JS
+            ============================================ -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <!-- meanmenu JS
+            ============================================ -->
+        <script src="js/meanmenu/jquery.meanmenu.js"></script>
+        <!-- counterup JS
+            ============================================ -->
+        <script src="js/counterup/jquery.counterup.min.js"></script>
+        <script src="js/counterup/waypoints.min.js"></script>
+        <script src="js/counterup/counterup-active.js"></script>
+        <!-- mCustomScrollbar JS
+            ============================================ -->
+        <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- sparkline JS
+            ============================================ -->
+        <script src="js/sparkline/jquery.sparkline.min.js"></script>
+        <script src="js/sparkline/sparkline-active.js"></script>
+        <!-- flot JS
+            ============================================ -->
+        <script src="js/flot/jquery.flot.js"></script>
+        <script src="js/flot/jquery.flot.resize.js"></script>
+        <script src="js/flot/flot-active.js"></script>
+        <!-- knob JS
+            ============================================ -->
+        <script src="js/knob/jquery.knob.js"></script>
+        <script src="js/knob/jquery.appear.js"></script>
+        <script src="js/knob/knob-active.js"></script>
+        <!--  Chat JS
+            ============================================ -->
+        <script src="js/chat/jquery.chat.js"></script>
+        <!--  todo JS
+            ============================================ -->
+        <script src="js/todo/jquery.todo.js"></script>
+        <!--  wave JS
+            ============================================ -->
+        <script src="js/wave/waves.min.js"></script>
+        <script src="js/wave/wave-active.js"></script>
+        <!-- plugins JS
+            ============================================ -->
+        <script src="js/plugins.js"></script>
+        <!-- dropzone JS
+            ============================================ -->
+            <script src="js/dropzone/dropzone.js"></script>
+        <!-- Data Table JS
+            ============================================ -->
+        <script src="js/data-table/jquery.dataTables.min.js"></script>
+        <script src="js/data-table/data-table-act.js"></script>
+        <!-- main JS
+            ============================================ -->
+        <script src="js/main.js"></script>
+        <!-- tawk chat JS
+            ============================================ -->
+        <script src="js/tawk-chat.js"></script>
+        <script>
+            $(document).ready(function(){
+           $('#first').click(function(){
+            $('#firstModal').modal('show');
+        });
+        $('#adduser').click(function(){
+            $('#adduserModal').modal('show');
+        });
+        });
+        </script>
+    </body>
+    
+    </html>
